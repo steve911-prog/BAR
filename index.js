@@ -1,9 +1,13 @@
-import goods from "./goods.json" assert { type: "json" };
-try {
-  console.log(goods["coke"]);
-} catch (error) {
-  console.log("error json");
-}
+// import goods from "./goods.json" assert { type: "json" };
+// try {
+//   console.log(goods["coke"]);
+// } catch (error) {
+//   console.log("error json");
+// }
+
+
+// let goods  = require("./goods.json")
+// console.log(goods)
 
 let budget = 199; //Client's money
 let yours = document.getElementById("yourMoney");
