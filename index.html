@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style_nav.css"/>
+     <link rel="stylesheet" href="style_buy.css"/>
+</head>
+<body> 
+
+<div class="container" id="container">
+
+    <video autoplay muted loop src="img/colabg.mp4" class="video"></video>
+    <div class="nav">
+      <div class="map">
+      <div class="logo">
+        <p>bar</p>
+      </div>
+      
+      <ul class="links">
+        <li class="link"><a href="#container" >Home</a></li>
+        <li class="link"><a href="" >Gallery</a></li>
+        <li class="link"><a href="">Explore</a></li>
+        <li class="link"><a href="" >Contact</a></li>
+        <li class="link"><i class="fa-solid fa-cart-shopping fa-bounce fa-2xl" id="cart" style="color: #ffffff;"></i></li>
+    
+      </ul>
+      
+      <a href="#store" id = "sign_up"><div id="yourMoney"></div></a>
+     
+
+      </div>
+      
+      <div class="main">
+            <a href="#store" class="goods">G O O D S</a>
+      </div>
+
+    
+    
+    </div>
+    
+    <div class="store" id="store">
+        <div class="item">
+            <div class="img"><img src="img/coke.jpg"></div>
+            <div class="title">Coca-Cola, 2L</div>
+            <div class="price cokePrice"></div>
+            <div class="btn"><a href="#store" class = "buy" id = "buyCoke"  onclick="request('coke')">BUY</a></div>
+        </div>
+
+        <div class="item">
+            <div class="img"><img src="img/fanta.png"></div>
+            <div class="title">Fanta, 0.5L</div>
+            <div class="price fantaPrice"></div>
+            <div class="btn"><a href="#store" class = "buy" id = "buyCoke"  onclick="request('coke')">BUY</a></div>
+
+        </div>
+
+        <div class="item">
+            <div class="img"><img src="img/sprite.jfif"></div>
+            <div class="title">Sprite Zero, 2L</div>
+            <div class="price spritePrice"></div>
+            <div class="btn"><a href="#store" class = "buy" id = "buyCoke"  onclick="request('coke')">BUY</a></div>
+
+        </div>
+<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="item">
+            <div class="img"><img src="img/mezzo.png"></div>
+            <div class="title">Mezzo mix, 0.5L</div>
+            <div class="price mezzoPrice"></div>
+            <div class="btn"><a href="#store" class = "buy" id = "buyCoke"  onclick="request('mezzo')">BUY</a></div>
+
+        </div>
+
+        <div class="item">
+            <div class="img"><img src="img/pepsi.png"></div>
+            <div class="title">Pepsi Light, 0.5L</div>
+            <div class="price pepsiPrice"></div>
+            <div class="btn"><a href="#store" class = "buy" id = "buyCoke"  onclick="request('pepsi')">BUY</a></div>
+
+        </div>
+
+        <div class="item" id = "bottom">
+            <div class="img"><img src="img/3xset.webp"></div>
+            <div class="title">3X SET, 5.5L</div>
+            <div class="price xsetPrice"></div>
+            <div class="btn"><a href="#store" class = "buy" id = "buyCoke"  onclick="request('xset')">BUY</a></div>
+
+        </div>
+
+        <div class="item">
+            <div class="img"><img src="img/mojito.jpg"></div>
+            <div class="title">Mojito, 0.3L</div>
+            <div class="price mojitoPrice"></div>
+            <div class="btn"><a href="#bottom" class = "buy" id = "buyCoke"  onclick="request('mojito')">BUY</a></div>
+
+        </div>
+
+        <div class="item">
+            <div class="img"><img src="img/fruitjuices.avif"></div>
+            <div class="title">2 Fruit Juices, 1L</div>
+            <div class="price fruitjuicesPrice"></div>
+            <div class="btn"><a href="#bottom" class = "buy" id = "buyCoke"  onclick="request('fruitjuices')">BUY</a></div>
+
+        </div>
+
+        <div class="item">
+            <div class="img"><img src="img/lemonade.jpg"></div>
+            <div class="title">Strong Lemonade, 0.3L</div>
+            <div class="price lemonadePrice"></div>
+            <div class="btn"><a href="#bottom" class = "buy" id = "buyCoke"  onclick="request('lemonade')">BUY</a></div>
+
+        </div>
+
+
+    
+    </div>
+
+
+        
+
+    </div>
+    <div class="footer"></div>
+
+</div>
+
+
+</body>
+</html>
