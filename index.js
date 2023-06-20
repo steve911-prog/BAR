@@ -9,6 +9,7 @@
 // let goods  = require("./goods.json")
 // console.log(goods)
 
+
 let budget = 199; //Client's money
 let yours = document.getElementById("yourMoney");
 
@@ -33,6 +34,11 @@ let prices = {
   fruitjuices: 16,
   lemonade: 9,
 };
+
+
+
+
+
 
 alert("You got bonus 199$. Enjoy them!");
 
@@ -70,6 +76,15 @@ function request(drink) {
   renewBucks();
 }
 
+let drinks = {
+  coke: ["img/coke.jpg", "Coca-Cola, 2L", 20, "coke"],
+};
+
+// for(const elem of drinks){
+  
+// }
+
+
 renewBucks();
 
 renewDrink(20, "cokePrice");
@@ -81,6 +96,9 @@ renewDrink(59, "xsetPrice");
 renewDrink(9, "mojitoPrice");
 renewDrink(16, "fruitjuicesPrice");
 renewDrink(9, "lemonadePrice");
+
+
+
 
 // buyCoke.onclick = request("coke");
 // buyFanta.onclick = request("coke");
