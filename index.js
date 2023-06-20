@@ -76,9 +76,9 @@ function request(drink) {
   renewBucks();
 }
 
-let drinks = {
-  coke: ["img/coke.jpg", "Coca-Cola, 2L", 20, "coke"],
-};
+// let drinks = {
+//   coke: ["img/coke.jpg", "Coca-Cola, 2L", 20, "coke"],
+// };
 
 // for(const elem of drinks){
   
