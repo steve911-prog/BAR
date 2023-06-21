@@ -68,7 +68,9 @@ function request(drink) {
   budget = budget - prices[`${drink}`];
 
   let cartNum = parseInt(document.getElementById("cart").textContent);
-  cartNum = cartNum + 1;
+  // cartNum = cartNum + 1;
+  cartNum++
+  
   // console.log(cartNum)
   document.getElementById("cart").textContent = `${cartNum}`;
 
