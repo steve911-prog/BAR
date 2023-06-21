@@ -42,20 +42,17 @@ let prices = {
 
 alert("You got bonus 199$. Enjoy them!");
 
-let renewBucks = () => {
+function renewBucks(geld) {
   document.getElementById("yourMoney").textContent = `${budget}$`;
-  // console.log("renwBucks")
+  console.log("renwBucks")
 };
 
 function renewDrink(num, id) {
   document.querySelector(`.${id}`).textContent = `${num}$`;
-  // console.log("renwDrink!")
-  // console.log(id)
-  // console.log(document.getElementsByClassName(`${id}`).textContent);
 }
 
 function request(drink) {
-  if (budget <= 0) {
+  if (budget - prices[`${drink}`] <= 0) {
     console.log("you have no money...");
     document.getElementById("yourMoney").textContent = "Sorry, no money...";
     budget = 199;
@@ -64,22 +61,25 @@ function request(drink) {
     return;
   }
 
-  console.log("function is done!");
+  // console.log("function is done!");
   budget = budget - prices[`${drink}`];
+  console.log(budget)
 
-  let cartNum = parseInt(document.getElementById("cart").textContent);
+  renewBucks(budget);
+
+  let cartNum = parseFloat(document.getElementById("cart").textContent);
+  console.log(cartNum)
   // cartNum = cartNum + 1;
   cartNum++
   
   // console.log(cartNum)
   document.getElementById("cart").textContent = `${cartNum}`;
 
-  console.log(budget);
-  renewBucks();
+
 }
 
 // let drinks = {
-//   coke: ["img/coke.jpg", "Coca-Cola, 2L", 20, "coke"],
+//   coke: ["img/coke.jpg", "Coca-Cola, 2L", 20, "cokePrice"],
 // };
 
 // for(const elem of drinks){
@@ -87,7 +87,7 @@ function request(drink) {
 // }
 
 
-renewBucks();
+renewBucks(budget);
 
 renewDrink(20, "cokePrice");
 renewDrink(19, "fantaPrice");
