@@ -13,14 +13,6 @@
 let budget = 199; //Client's money
 let yours = document.getElementById("yourMoney");
 
-let cokePrice = document.getElementsByClassName("cokePrice").textContent;
-let fantaPrice = document.getElementsByClassName("fantaPrice").textContent;
-let waterPrice = document.getElementsByClassName("waterPrice").textContent;
-
-let buyCoke = document.getElementsByClassName("buyCoke");
-let buyFanta = document.getElementsByClassName("buyFanta");
-let buyWater = document.getElementsByClassName("buyWater");
-
 document.getElementById("cart").textContent = "0";
 
 let prices = {
@@ -35,21 +27,12 @@ let prices = {
   lemonade: 9,
 };
 
-
-
-
-
-
 alert("You got bonus 199$. Enjoy them!");
 
-function renewBucks(geld) {
+function renewBucks() {
   document.getElementById("yourMoney").textContent = `${budget}$`;
   console.log("renwBucks")
 };
-
-function renewDrink(num, id) {
-  document.querySelector(`.${id}`).textContent = `${num}$`;
-}
 
 function request(drink) {
   if (budget - prices[`${drink}`] <= 0) {
@@ -65,7 +48,7 @@ function request(drink) {
   budget = budget - prices[`${drink}`];
   console.log(budget)
 
-  renewBucks(budget);
+  renewBucks();
 
   let cartNum = parseFloat(document.getElementById("cart").textContent);
   console.log(cartNum)
@@ -78,6 +61,8 @@ function request(drink) {
 
 }
 
+renewBucks();
+
 // let drinks = {
 //   coke: ["img/coke.jpg", "Coca-Cola, 2L", 20, "cokePrice"],
 // };
@@ -87,17 +72,17 @@ function request(drink) {
 // }
 
 
-renewBucks(budget);
 
-renewDrink(20, "cokePrice");
-renewDrink(19, "fantaPrice");
-renewDrink(15, "spritePrice");
-renewDrink(16, "mezzoPrice");
-renewDrink(20, "pepsiPrice");
-renewDrink(59, "xsetPrice");
-renewDrink(9, "mojitoPrice");
-renewDrink(16, "fruitjuicesPrice");
-renewDrink(9, "lemonadePrice");
+
+// renewDrink(20, "cokePrice");
+// renewDrink(19, "fantaPrice");
+// renewDrink(15, "spritePrice");
+// renewDrink(16, "mezzoPrice");
+// renewDrink(20, "pepsiPrice");
+// renewDrink(59, "xsetPrice");
+// renewDrink(9, "mojitoPrice");
+// renewDrink(16, "fruitjuicesPrice");
+// renewDrink(9, "lemonadePrice");
 
 
 
