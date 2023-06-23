@@ -74,7 +74,7 @@ let prices = {
   lemonade: 9,
 };
 
-alert("You got bonus 199$. Enjoy them!");
+
 
 
 function request(drink) {
@@ -103,3 +103,5 @@ function request(drink) {
 }
 
 renewBucks();
+
+alert("You got bonus 199$. Enjoy them!");
