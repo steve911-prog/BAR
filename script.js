@@ -31,7 +31,7 @@ function process(_data_){
         budget = 199;
         renewBucks();
         const store = document.getElementById('store') 
-
+        
         for (const i in dataNamesArray) {
             let item = document.createElement('div')
             item.className = 'item'
@@ -61,19 +61,6 @@ process(data)
 
 
 document.getElementById("cart").textContent = "0";
-
-let prices = {
-  coke: 20,
-  fanta: 19,
-  sprite: 15,
-  mezzo: 16,
-  pepsi: 20,
-  xset: 59,
-  mojito: 9,
-  fruitjuices: 16,
-  lemonade: 9,
-};
-
 
 
 
